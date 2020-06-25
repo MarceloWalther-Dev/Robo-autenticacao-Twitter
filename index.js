@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-require('dotenv/types').config({path:'./.env'});
+require('dotenv').config({path:'./.env'});
 async function twitter(){
    let urlTwitter = 'https://twitter.com/login';
    let usuario = process.env.USUARIO;
